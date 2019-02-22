@@ -1,6 +1,7 @@
 plugins {
 	id 'org.springframework.boot' version '2.1.3.RELEASE'
 	id 'java'
+	id 'application'
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -8,6 +9,10 @@ apply plugin: 'io.spring.dependency-management'
 group = 'com.mgmresorts'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
+
+application {
+    mainClassName = 'com.mgmresorts.casino.reactive.functional.CasinoApplication'
+}
 
 repositories {
 	mavenCentral()
