@@ -46,11 +46,11 @@ jobs:
       - run: 
          command: $POST_MESSAGE
       - run: >
-          curl -d '[{ "id":"1807",  "eventType":"recordInserted",
-                   "subject":"myapp/vehicles/motorcycles",  "eventTime":"2017-08-10T21:03:07+00:00",
-                    "data":{ "make":"Ducati44", "model":"Monster44" },
-                    "dataVersion":"1.0", "metadataVersion":"1",
-                    "topic":"/subscriptions/cf27ed12-9ba3-4427-b66a-0ec523fe001e/resourceGroups/agcustom/providers/Microsoft.EventGrid/topics/agcustom"
-                  }]'
-              -H 'Content-Type:application/json' -H 'aeg-sas-key:4+E0KhMSmcWyLfBYz3ab6uXffjuY4l2NoYAEhenQOXY='
+          curl -d '[{ "id":"1807",  "eventType":"recordInserted", \
+                   "subject":"myapp/vehicles/motorcycles",  "eventTime":"2017-08-10T21:03:07+00:00", \
+                    "data":{ "make":"Ducati44", "model":"Monster44" }, \
+                    "dataVersion":"1.0", "metadataVersion":"1", \
+                    "topic":"/subscriptions/cf27ed12-9ba3-4427-b66a-0ec523fe001e/resourceGroups/agcustom/providers/Microsoft.EventGrid/topics/agcustom" \
+                  }]' \
+              -H 'Content-Type:application/json' -H 'aeg-sas-key:4+E0KhMSmcWyLfBYz3ab6uXffjuY4l2NoYAEhenQOXY=' \
               -X POST https://agcustom.eastus-1.eventgrid.azure.net/api/events
