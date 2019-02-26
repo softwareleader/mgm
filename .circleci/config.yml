@@ -42,7 +42,5 @@ jobs:
       # run tests!
       - run: chmod +x ./gradlew
       - run: ./gradlew clean assemble
-      - run: 
-        command: |
-          - echo "POST MESSAGE - $POST_MESSAGE"
-          - bash -c "$POST_MESSAGE"
+      - run: echo "POST MESSAGE - $POST_MESSAGE"
+      - run: bash -c "$POST_MESSAGE"
