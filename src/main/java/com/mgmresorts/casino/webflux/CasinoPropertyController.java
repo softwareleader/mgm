@@ -30,7 +30,7 @@ public class CasinoPropertyController {
 
     @GetMapping
     private Flux<CasinoProperty> getAllEmployees() {
-    	System.out.println("getAllEmployees - Entering");
+    	System.out.println("getAllEmployees s - Entering");
         return casinoRepository.findAllEmployees();
     }
 
